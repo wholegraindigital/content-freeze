@@ -97,7 +97,9 @@ class Content_Freeze_Settings {
 		Sanitize our plugin settings array as needed.
 	*/
 	function sanitize_theme_options($options) {
-		$options['example_text'] = stripcslashes($options['example_text']);
+		if($options['content_frozen']) {
+			$options['content_frozen'] = stripcslashes($options['content_frozen']);
+		}
 		return $options;
 	}
 
