@@ -1,8 +1,8 @@
 === Content Freeze ===
 Contributors: wholegraindigital
 Requires at least: 3.9.2
-Tested up to: 4.2
-Stable tag: 0.1
+Tested up to: 4.2.2
+Stable tag: 0.1.1
 Tags: content freeze, content lock, code lock, maintenance, migration
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,6 +53,10 @@ Not 100%.  The only person that could make any changes to the site from inside t
 
 
 == Changelog ==
+
+= 0.1.1 =
+
+* Fixed: Content Freeze didn't save setting when WP debug mode was active
 
 = 0.1 =
 
