@@ -40,7 +40,7 @@ class Content_Freeze_Settings {
 		register_setting($this->settings_field, $this->settings_field, array($this, 'sanitize_theme_options'));
 		add_option($this->settings_field, Content_Freeze_Settings::$default_settings);
 
-		if($this->get_field_value('content_frozen') && $_GET['page']!='content_freeze') {
+		if($this->get_field_value('content_frozen') && isset($_GET['page']) && $_GET['page']!='content_freeze') {
 			add_action('admin_notices', array($this, 'content_frozen_notice'));
 		}
 
