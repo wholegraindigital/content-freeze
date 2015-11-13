@@ -3,7 +3,7 @@
 Plugin Name: Content Freeze
 Plugin URI: http://www.wholegraindigital.com/
 Description: The content freeze plugin would allow an admin to 'lock' all content on the site for a given time period
-Version: 0.1.1
+Version: 0.1.2
 Author: Wholegrain Digital
 Author URI: http://www.wholegraindigital.com/
 License: GPL
@@ -16,7 +16,7 @@ if (!function_exists('is_admin')) {
     exit();
 }
 
-define('CONTENT_FREEZE_VERSION', '0.1.1');
+define('CONTENT_FREEZE_VERSION', '0.1.2');
 define('CONTENT_FREEZE_RELEASE_DATE', date_i18n('F j, Y', '1397937230'));
 define('CONTENT_FREEZE_DIR', plugin_dir_path(__FILE__));
 define('CONTENT_FREEZE_URL', plugin_dir_url(__FILE__));

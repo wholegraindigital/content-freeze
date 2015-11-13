@@ -2,7 +2,7 @@
 Contributors: wholegraindigital
 Requires at least: 3.9.2
 Tested up to: 4.2.2
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 Tags: content freeze, content lock, code lock, maintenance, migration
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -10,11 +10,11 @@ The Content Freeze plugin allows an admin to 'lock' all content on the site to p
 
 == Description ==
 
-Need to stop your clients and users from editing a site while you do maintenance or a server migration?  
+Need to stop your clients and users from editing a site while you do maintenance or a server migration?
 
-The content freeze plugin solves the problem of telling the client "Please don't edit anything on the site today because your changes may be lost" and then finding out after the event that they spent the whole day making changes to the site. You want to keep your clients happy, and restricting access during maintenance and migrations helps avoid confusion and inconvenience for all involved. 
+The content freeze plugin solves the problem of telling the client "Please don't edit anything on the site today because your changes may be lost" and then finding out after the event that they spent the whole day making changes to the site. You want to keep your clients happy, and restricting access during maintenance and migrations helps avoid confusion and inconvenience for all involved.
 
-The content freeze plugin allows an admin to 'lock' the site to prevent the anything being edited.  Users can still visit the site, but no one can make changes behind the scenes without your permission.  
+The content freeze plugin allows an admin to 'lock' the site to prevent the anything being edited.  Users can still visit the site, but no one can make changes behind the scenes without your permission.
 
 It is very simple to use.  When installed, an admin can switch the content freeze on.  At that point, only the admin who activated the content freeze can log in and all other users (including other admins) are locked out temporarily.  When they try to log in they will see a message teling them that the site is currently frozen and they therefore cannot login at this time.
 We plan to add some more features in the near future, including scheduling and also optimising it for use on multisite networks.  Contributions welcome.
@@ -35,7 +35,7 @@ Yes, it should work fine with all themes.  If you find a problem, let us know.
 
 = Does it work on multisite installations? =
 
-Yes it does, but you have to activate the freeze on each individual site within your network. Once activated, you not to visit the wp-admin url to access any individual sub-sites that are not locked (wp-login.php urls won't work during the freeze).  
+Yes it does, but you have to activate the freeze on each individual site within your network. Once activated, you not to visit the wp-admin url to access any individual sub-sites that are not locked (wp-login.php urls won't work during the freeze).
 
 In the future we hope to add a network freeze option.
 
@@ -53,6 +53,10 @@ Not 100%.  The only person that could make any changes to the site from inside t
 
 
 == Changelog ==
+
+= 0.1.2 =
+
+* Fixed: redirect issue when user gets logged out
 
 = 0.1.1 =
 
